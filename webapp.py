@@ -11,7 +11,7 @@ def load_selected_model(selected_model):
         return load_model('model_hybrid_1.keras')
     elif selected_model == 'ResNet':
         return load_model('model_resnet.keras')
-    elif selected_model == 'EfficientNet':
+    elif selected_model == 'MobileNet':
         return load_model('model_efficientnet.keras')
 
 # Define class labels
