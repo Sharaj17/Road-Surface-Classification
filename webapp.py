@@ -19,9 +19,9 @@ class_labels = ['Wet Asphalt Smooth', 'Wet Concrete Smooth', 'Wet Gravel']
 
 # Dictionary containing information about each model
 model_info = {
-    'HybridModel': 'The Hybrid Model combines features from various architectures to achieve better performance in road surface image classification.',
+    'HybridModel': 'The Hybrid Model combines features from ResNet and MobileNet to achieve better performance in road surface image classification.',
     'ResNet': 'ResNet is a deep convolutional neural network architecture known for its residual connections, which help alleviate the vanishing gradient problem.',
-    'EfficientNet': 'EfficientNet is a neural network architecture that achieves state-of-the-art performance with fewer parameters, making it more computationally efficient.'
+    'MobileNet': 'MobileNet is a lightweight neural network architecture optimized for mobile and embedded devices, leveraging depthwise separable convolutions for efficiency without sacrificing accuracy.'
 }
 
 # Function to preprocess the image
