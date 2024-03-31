@@ -46,7 +46,7 @@ st.title('Road Surface Image Classification')
 
 # Sidebar for model selection
 st.sidebar.title('Model Selection')
-selected_model = st.sidebar.selectbox('Choose a Model', ['HybridModel', 'ResNet', 'EfficientNet'])
+selected_model = st.sidebar.selectbox('Choose a Model', ['HybridModel', 'ResNet', 'MobileNet'])
 with st.spinner('Working on it...'):
     # Load the selected model
     model = load_selected_model(selected_model)
@@ -80,8 +80,13 @@ if uploaded_file is not None:
         st.error("An error occurred: {}".format(str(e)))
 
 # Display hyperlinks to download Python notebooks
-st.sidebar.title('Download Notebooks')
-st.sidebar.markdown("Download the Python notebooks used for model training and development:")
-st.sidebar.markdown("[HybridModel Python Notebook](https://github.com/Sharaj17/Road-Surface-Classification/blob/master/CT5103_Assignment1.pdf)")
-st.sidebar.markdown("[Sample Images for Testing](https://github.com/Sharaj17/Road-Surface-Classification/tree/master/Test%20Images)")
+st.sidebar.title('Developed by')
+st.sidebar.markdown('Sharaj Jagadeesan 23100668')
+st.sidebar.markdown('Estella Roberts 23102324')
+st.sidebar.markdown('Jason Martin 23101224')
+st.sidebar.markdown('Merlin Mariam Moncy 23103030')
+st.sidebar.markdown('Sreelakshmi Anjilimarayil Shyjumon 23103188')
+#st.sidebar.markdown("Download the Python notebooks used for model training and development:")
+#st.sidebar.markdown("[HybridModel Python Notebook](https://github.com/Sharaj17/Road-Surface-Classification/blob/master/CT5103_Assignment1.pdf)")
+#st.sidebar.markdown("[Sample Images for Testing](https://github.com/Sharaj17/Road-Surface-Classification/tree/master/Test%20Images)")
 
