@@ -10,9 +10,9 @@ def load_selected_model(selected_model):
     if selected_model == 'HybridModel':
         return load_model('model_hybrid_1.keras')
     elif selected_model == 'ResNet':
-        return load_model('model_resnet.keras')
+        return load_model('ResNet_balanced.keras')
     elif selected_model == 'MobileNet':
-        return load_model('model_efficientnet.keras')
+        return load_model('MobileNet_balanced.keras')
 
 # Define class labels
 class_labels = ['Wet Asphalt Smooth', 'Wet Concrete Smooth', 'Wet Gravel']
